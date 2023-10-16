@@ -1,16 +1,12 @@
 use bevy::prelude::*;
 
 // Constants for grid and window dimensions
-pub const CELL_SIZE: i32 = 80;
+pub const CELL_SIZE: f32 = 80.0;
 pub const COLS: i32 = 10;
 pub const ROWS: i32 = 10;
-pub const WINDOW_HEIGHT: f32 = (CELL_SIZE * ROWS) as f32;
-pub const WINDOW_WIDTH: f32 = (CELL_SIZE * COLS) as f32;
+pub const WINDOW_HEIGHT: f32 = (CELL_SIZE * ROWS as f32);
+pub const WINDOW_WIDTH: f32 = (CELL_SIZE * COLS as f32);
 pub const GAME_TITLE: &str = "Snake";
-
-// Colors in hexadecimal format
-pub const LIGHT_GREEN: &str = "##84cc16";
-pub const DARK_GREEN: &str = "##1a2e05";
 
 // Initial snake parameters
 pub const START_LENGTH: i32 = 3;
